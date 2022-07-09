@@ -1,0 +1,58 @@
+
+h1{
+    color: red;
+}
+
+.container {
+    border: 1px black solid;
+}
+
+.box1{
+    border: 1px black solid;
+    height: 30px;
+    width: 200px;
+    grid-template: 15px 50%;
+}
+
+
+/* .grid {
+    display: grid;
+    border: 2px blue solid;
+    height: 500px;
+    width: 500px;
+    grid-template: 100px 100px 100px 200px / repeat(4, 3fr 2fr);
+    gap: 10px; */
+    
+  /* }
+  
+  .a {
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:3
+  }
+  
+  .b {
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:3;
+    grid-column-end:5
+  }
+  
+  .c {
+    grid-row:2/3;
+    grid-column-start:5;
+    grid-column-end:9
+  }
+  .d {
+    grid-row:3/4;
+    grid-column-start:5;
+    grid-column-end:9
+  }
+  
+  .box {
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+  } */
