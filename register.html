@@ -38,7 +38,7 @@
       <div class="container mt-5">
         <header><h1>Register</h1></header>
         <form action="">
-          <div class="row" >
+          <div class="row mt-3 d-flex justify-content-center" >
             <div class="col-3">
               <label for="fname" id=></label>
               <input type="text" placeholder="First Name" id="fname" name="fname" required><br><br>
@@ -48,7 +48,7 @@
               <input type="text" placeholder="Last Name" id="lname" name="lname" required><br><br>
             </div>
           </div>
-          <div class="row">
+          <div class="row d-flex justify-content-center">
             <div class="col-3">
               <label for="password"></label>
               <input type="text" placeholder="Password" id="password" name="password" required minlength="5" maxlength="15"><br><br>
@@ -58,7 +58,7 @@
               <input type="text" placeholder="Password again" id="passworda" name="passworda"><br><br>
             </div>
             </div>
-          <div class="row">
+          <div class="row d-flex justify-content-center">
             <div class="col-3">
               <label for="email"></label>
               <input type="text" placeholder="email" id="email" name="email" required minlength="5" maxlength="15"><br><br>
@@ -69,7 +69,7 @@
             </div>
               <header><h1>Debit/Credit Card Information</h1></header>
           </div>
-            <div class="row">
+            <div class="row mt-3 d-flex justify-content-center">
               <div class="col-3">
                 <label for="address"></label>
                 <input type="text" placeholder="Address" id="address" name="password" required><br><br>
@@ -79,7 +79,7 @@
                 <input type="dropdown" placeholder="apt." id="city/county" name="passworda"><br><br>
               </div> 
             </div>
-          <div class="row">
+          <div class="row d-flex justify-content-center">
             <div class="col-3">
               <!-- <div class="input-group flex-nowrap">
                 <span class="input-group-text" id="addon-wrapping">city/county</span>
@@ -110,6 +110,48 @@
           </div>
         </form>
       </div>
+      <!-- <H1>Credit/deibt card Information</H1> -->
+    <div class="container mt-3 d-flex justify-content-center">
+        <form action="">
+      <div class="row">
+        <div class="col mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="flexCredit">
+           <label class="form-check-label" for="Credit">
+            Credit
+          </label><br>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-4">
+            <div>
+              <input type="text" placeholder="credit/debit #" id="ccnum" name="ccnum"><br><br>
+            </div>
+            </div>
+          <div class="col-4">
+            <div>
+              <input type="text" placeholder="MM/YY" id="date" name="date">
+            </div>
+         </div>
+          <div class="col">
+            <div>
+              <input type="text" placeholder="CW" id="cw" name="cw">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <!-- <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">Card</span>
+              <input type="text" class="form-control" placeholder="Card Holder Name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div> -->
+              <div>
+                <input type="text" placeholder="Card Holder's Name" id="chname" name="chname"><br><br>
+              </div> 
+          </div>
+          </div>
+          </form>
+      </div>
+      
     
  <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
