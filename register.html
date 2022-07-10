@@ -38,61 +38,76 @@
       <div class="container mt-5">
         <header><h1>Register</h1></header>
         <form action="">
-        <div class="row" >
-          <div class="col-3">
-            <label for="fname" id=></label>
-                <input type="text" placeholder="First Name" id="fname" name="fname" required><br><br>
+          <div class="row" >
+            <div class="col-3">
+              <label for="fname" id=></label>
+              <input type="text" placeholder="First Name" id="fname" name="fname" required><br><br>
             </div>
             <div class="col-3 col">
-                <label for="lname" id=></label>
-                    <input type="text" placeholder="Last Name" id="lname" name="lname" required><br><br>
+              <label for="lname" id=></label>
+              <input type="text" placeholder="Last Name" id="lname" name="lname" required><br><br>
+            </div>
           </div>
           <div class="row">
             <div class="col-3">
-                <label for="password">password</label>
-                    <input type="text" placeholder="Password" id="password" name="password" required minlength="5" maxlength="15"><br><br>
-                </div>
-                <div class="col-3">
-                 <label for="passworda"></label>
-                    <input type="text" placeholder="Password again" id="passworda" name="passworda"><br><br>
-                </div>
+              <label for="password">password</label>
+              <input type="text" placeholder="Password" id="password" name="password" required minlength="5" maxlength="15"><br><br>
             </div>
+            <div class="col-3">
+              <label for="passworda"></label>
+              <input type="text" placeholder="Password again" id="passworda" name="passworda"><br><br>
+            </div>
+            </div>
+          <div class="row">
+            <div class="col-3">
+              <label for="email"></label>
+              <input type="text" placeholder="email" id="email" name="email" required minlength="5" maxlength="15"><br><br>
+            </div>
+            <div class="col-3">
+              <label for="birthdate"></label>
+              <input type="text" placeholder="birthdate mm/dd/yyyy" id="email" name="email"><br><br>
+            </div>
+              <header><h1>Debit/Credit Card Information</h1></header>
+          </div>
             <div class="row">
-                <div class="col-3">
-                    <label for="email"></label>
-                        <input type="text" placeholder="email" id="email" name="email" required minlength="5" maxlength="15"><br><br>
-                    </div>
-                    <div class="col-3">
-                     <label for="birthdate"></label>
-                        <input type="text" placeholder="birthdate mm/dd/yyyy" id="email" name="email"><br><br>
-                    </div>
-                    <header><h1>Debit/Credit Card Information</h1></header>
-                    <div class="row mt-2">
-                        <div class="col-3">
-                            <label for="address"></label>
-                                <input type="text" placeholder="Address" id="address" name="password" required><br><br>
-                            </div>
-                            <div class="col-3">
-                             <label for="apt"></label>
-                                <input type="dropdown" placeholder="apt." id="city/county" name="passworda"><br><br>
-                            </div> 
-                            <div class="row">
-                                <div class="col-3">
-                                    <label for="fname" id=></label>
-                                        <input type="text" placeholder="First Name" id="fname" name="fname" required maxlength="15"><br><br>
-                                    </div>
-                                    <div class="col-3">
-                                        <select id="States" name="cars">
-                                            <label for="State">States</label>
-                                            <option value="volvo">New York</option>
-                                            <option value="saab">Florida</option>
-                                            <option value="fiat" selected>States</option>
-                                            <option value="audi">Missour</option>
-                                          </select><br><br>
-                                        </div>
-                            </div>
-                    </div>
-                    
+              <div class="col-3">
+                <label for="address"></label>
+                <input type="text" placeholder="Address" id="address" name="password" required><br><br>
+              </div>
+              <div class="col-3">
+                <label for="apt"></label>
+                <input type="dropdown" placeholder="apt." id="city/county" name="passworda"><br><br>
+              </div> 
+            </div>
+          <div class="row">
+            <div class="col-3">
+              <!-- <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">city/county</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+              </div> -->
+              <label for="fname" id=></label>
+              <input type="text" placeholder="First Name" id="fname" name="fname" required maxlength="15"><br><br>
+            </div>
+            <div class="col-3">
+              <!-- <div class="input-group mb-5">
+                <label class="input-group-text" for="states">States</label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>States...</option>
+                  <option value="1">New York</option>
+                  <option value="2">Missouri</option>
+                  <option value="3">Florida</option>
+                  <option value="3">Georgia</option>
+                </select>
+              </div> -->
+              <select id="States" name="states">
+                <label for="State">States</label>
+                <option value="new york">New York</option>
+                <option value="florida">Florida</option>
+                <option value="states" selected>States</option>
+                <option value="missouri">Missouri</option>
+              </select><br><br>
+            </div>
+          </div>
         </form>
       </div>
     
