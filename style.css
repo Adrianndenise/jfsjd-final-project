@@ -5,14 +5,15 @@ h1{
 
 .container {
     border: 1px black solid;
+    width: 770px;
 }
 
-.box1{
+/* .box1{
     border: 1px black solid;
     height: 30px;
     width: 200px;
     grid-template: 15px 50%;
-}
+} */
 
 
 /* .grid {

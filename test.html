@@ -10,42 +10,45 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container d-flex justify-content-center">
         <form action="">
+      <div class="row">
+        <div class="col">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+           <label class="form-check-label" for="flexCheckDefault">
+            Default checkbox
+          </label><br>
+        </div>
+      </div>
         <div class="row">
-          <div class="col-sm-3 ">
-            Level 1: .col-sm-3 
-            <div class="col-sm-9">
-                <div>
-                    <label for="debit/credit"></label>
-                    <input type="text" placeholder="000 000 0000 0000" id="email" name="email"><br><br>
-                </div>
-            </div>
-        
-          </div>
-         
-            <div class="row">
-        <div class="col-8 col-sm-6">
+          <div class="col-4">
             <div>
-                <label for="chname"></label>
-                <input type="text" placeholder="Card Holder Name="chname"><br><br>
-            </div> 
-                Level 2: .col-8 .col-sm-6
-              </div>
-              
-              <div class="col-4 col-sm-6">
-                <div>
-                    
-                    <label for="debit/credit"></label>
-                    <input type="text" placeholder="000 000 0000 0000" id="email" name="email">
-                </div>
-                Level 2: .col-4 .col-sm-6
-              </div>
+              <input type="text" placeholder="credit/debit #" id="ccnum" name="ccnum"><br><br>
             </div>
+            </div>
+          <div class="col-4">
+            <div>
+              <input type="text" placeholder="MM/YY" id="date" name="date">
+            </div>
+         </div>
+          <div class="col">
+            <div>
+              <input type="text" placeholder="CW" id="cw" name="cw">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <!-- <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">Card</span>
+              <input type="text" class="form-control" placeholder="Card Holder Name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div> -->
+              <div>
+                <input type="text" placeholder="Card Holder's Name" id="chname" name="chname"><br><br>
+              </div> 
+          </div>
           </div>
           </form>
-        </div>
-
       </div>
 
       <!-- JavaScript Bundle with Popper -->
