@@ -1,12 +1,13 @@
 
 h1{
     color: red;
+    text-align: center;
 }
 
-.container {
+/* .container {
     border: 1px black solid;
     width: 770px;
-}
+} */
 
 /* .box1{
     border: 1px black solid;
