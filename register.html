@@ -38,6 +38,7 @@
       <div class="container mt-5">
         <header><h1>Register</h1></header>
         <form action="">
+          <div class="row mt-4 d-flex justify-content-center" >
           <div class="row mt-3 d-flex justify-content-center" >
             <div class="col-3">
               <label for="fname" id=></label>
@@ -48,6 +49,7 @@
               <input type="text" placeholder="Last Name" id="lname" name="lname" required><br><br>
             </div>
           </div>
+          <div class="row mt-3d -flex justify-content-center">
           <div class="row d-flex justify-content-center">
             <div class="col-3">
               <label for="password"></label>
@@ -69,6 +71,7 @@
             </div>
               <header><h1>Debit/Credit Card Information</h1></header>
           </div>
+            <div class="row mt-3  d-flex justify-content-center">
             <div class="row mt-3 d-flex justify-content-center">
               <div class="col-3">
                 <label for="address"></label>
@@ -81,24 +84,10 @@
             </div>
           <div class="row d-flex justify-content-center">
             <div class="col-3">
-              <!-- <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping">city/county</span>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-              </div> -->
               <label for="city/county" id=></label>
               <input type="text" placeholder="city/county" id="city/county" name="city/county" required maxlength="15"><br><br>
             </div>
             <div class="col-3">
-              <!-- <div class="input-group mb-5">
-                <label class="input-group-text" for="states">States</label>
-                <select class="form-select" id="inputGroupSelect01">
-                  <option selected>States...</option>
-                  <option value="1">New York</option>
-                  <option value="2">Missouri</option>
-                  <option value="3">Florida</option>
-                  <option value="3">Georgia</option>
-                </select>
-              </div> -->
               <select id="States" name="states">
                 <label for="State">States</label>
                 <option value="new york">New York</option>
@@ -108,18 +97,26 @@
               </select><br><br>
             </div>
           </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-3">
+              <label for="zip"></label>
+              <input type="text" placeholder="Zip Code" id="zip-code" name="password" required><br><br>
+            </div> 
+          </div>
+          <div class="row"></div>
         </form>
       </div>
-      <!-- <H1>Credit/deibt card Information</H1> -->
-    <div class="container mt-3 d-flex justify-content-center">
+      <div class="container d-flex justify-content-center">
         <form action="">
       <div class="row">
+        <div class="col">
         <div class="col mb-3">
           <input class="form-check-input" type="checkbox" value="" id="flexCredit">
-           <label class="form-check-label" for="Credit">
+          <label class="form-check-label" for="Credit">
             Credit
           </label><br>
         </div>
+      </div>
       </div>
         <div class="row">
           <div class="col-4">
@@ -131,7 +128,7 @@
             <div>
               <input type="text" placeholder="MM/YY" id="date" name="date">
             </div>
-         </div>
+          </div>
           <div class="col">
             <div>
               <input type="text" placeholder="CW" id="cw" name="cw">
@@ -140,20 +137,16 @@
         </div>
         <div class="row">
           <div class="col-6">
-            <!-- <div class="input-group input-group-sm mb-3">
-              <span class="input-group-text" id="inputGroup-sizing-sm">Card</span>
-              <input type="text" class="form-control" placeholder="Card Holder Name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-            </div> -->
-              <div>
-                <input type="text" placeholder="Card Holder's Name" id="chname" name="chname"><br><br>
-              </div> 
+            <div>
+              <input type="text" placeholder="Card Holder's Name" id="chname" name="chname"><br><br>
+            </div> 
           </div>
-          </div>
-          </form>
+        </div>
+      </form>
       </div>
       
     
- <!-- JavaScript Bundle with Popper -->
+<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
 </body>
 </html>
