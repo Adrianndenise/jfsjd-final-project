@@ -1,9 +1,17 @@
 
-h1{
+h1, h3 {
     color: red;
     text-align: center;
 }
 
+a {
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.container-form {
+  width: 500px;
+  height: 800px;
+}
 /* .container {
     border: 1px black solid;
     width: 770px;
