@@ -2,15 +2,22 @@
 h1, h3 {
     color: red;
     text-align: center;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
 }
 
 a {
   font-family: 'Edu VIC WA NT Beginner', cursive;
 }
 
+/* .border {
+  border: 1px solid;
+  padding: 10px
+} */
+
 .container-form {
   width: 500px;
   height: 800px;
+  ;
 }
 /* .container {
     border: 1px black solid;
