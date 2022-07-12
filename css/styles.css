@@ -1,0 +1,43 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+font-family {
+    'Edu Vic wa nt Beginner', cursive;
+}
+
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+}
+
+.nav-list li {
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: min-content;
+}
+
+header {
+    border-width: 5px
+}
+
+.columns {
+    display: flex;
+    width: 800px;
+    gap: 2rem;
+
+}
+
+.columns > * {
+    flex: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+} 
