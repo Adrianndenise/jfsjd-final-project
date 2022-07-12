@@ -3,8 +3,8 @@ h1 {
     text-align: center;
 }
 
-font-family {
-    'Edu Vic wa nt Beginner', cursive;
+ p {
+    font-family:'Edu Vic wa nt Beginner' cursive;
 }
 
 
@@ -41,3 +41,8 @@ header {
     flex-shrink: 0;
     flex-basis: auto;
 } 
+
+.gloria {
+    height: 250px;  
+    width:  350px;
+}
