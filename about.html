@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
         <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+<link rel="stylesheet" href="style.css">
     <title>About Us</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,12 +27,13 @@
                 <a class="nav-link" href="#">Itinerary</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">Contact</a>
+                <a class="nav-link active" href="#">Contact</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
+  </nav>
+  <div class="container">
     <Header>
         <h1>ABOUT</h1>
         <p>
@@ -45,41 +45,50 @@
             </div>
         </div>
     </Header>
-    <div class="card text-start">
-      <img class="card-img-top" src="Images/GloriaOliver.jpg" alt="Gloria Oliver" height="200px" width="200px">
+    
+    
+    <div class="row">
+      <div class="col">
+    <div class="card" style="width: 18rem"> 
+      <img class=" gloria" src="Images/GloriaOliver.jpg" alt="Gloria Oliver">
       <div class="card-body">
         <h4 class="card-title">Gloria Oliver</h4>
         <p class="card-text">Atlanta, GA</p>
         <p class="card-text">Born in Oakland, CA and raised in Richmond, CA. Currently a Atlanta, GA native of 11 years. I'd like to make a positive impact on the world of technology by helping others and holding the door open for aspiring engineers of the future. "Each one, teach one". </p>
       </div>
-      <div class="card text-start">
+    </div>
+  </div>
+      
+        
+        <div class="card" style="width: 18rem"> 
         <img class="card-img-top" src="Images/RonNorman.jpg" alt="Ron Norman" height="200px" width="200px">
         <div class="card-body">
-            <h4 class="card-title">Ron Norman</h4>
-            <p class="card-text">New Orleans, LA</p>
-            <p class="card-text">Millitary veteran born and raised in New Orleans, LA. Current computer science student at the school of _______.
+          <h4 class="card-title">Ron Norman</h4>
+           <p class="card-text">New Orleans, LA</p>
+          <p class="card-text">Millitary veteran born and raised in New Orleans, LA. Current computer science student at the school of _______.
                 </p>
         </div>
-        <div class="card text-start">
-            <img class="card-img-top" src="Images/AdriannSeymour.jpg" alt="Adriann Seymour" height="200px" width="200px">
-            <div class="card-body">
+      </div>
+
+      <div class="card" style="width: 18rem"> 
+        <img class="card-img-top" src="Images/AdriannSeymour.jpg" alt="Adriann Seymour" height="200px" width="200px">
+         <div class="card-body">
                 <h4 class="card-title">Adriann Seymour</h4>
                 <p class="card-text">Jacksonville, FL</p>
                 <p class="card-text">Florida native and proud mommy of 2. She began her journey in software engineering a few months ago and hopes to land a role in Edtech. She believes “Education Is Key.”</p>
-            </div>
-            <div class="card text-start">
-                <img class="card-img-top" src="Images/LuisMedina.jpeg" alt="Luis Medina" height="200px" width="200px">
-                <div class="card-body">
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem"> 
+          <img class="card-img-top" src="Images/LuisMedina.jpeg" alt="Luis Medina" height="200px" width="200px">
+           <div class="card-body">
                     <h4 class="card-title">Luis Medina</h4>
                     <p class="card-text">Manhattan, NY</p>
                     <p class="card-text">My family was born and raised in the Dominican Republic and I was born and raised in Manhattan, New York in the early 1980s. I earned a associates degree in graphic arts and a bachelor of sciences degree in human services from Boricua College.</p>
-                </div>
-                <footer>
-
-                </footer>
-      </div>
-      </button>
+            </div>
+        </div>
     </div>
+  </div>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
