@@ -16,6 +16,10 @@ a {
   ;
 }
 
+.card-border {
+  border-radius: 1rem solid 1px;
+}
+
 /* .container {
     border: 1px black solid;
     width: 770px;
