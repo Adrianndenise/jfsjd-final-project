@@ -10,10 +10,16 @@ a {
 }
 
 .container-form {
-  width: 500px;
-  height: 800px;
+  max-width: 500px;
+  max-height: 800px;
+  padding: 3rem;
   ;
 }
+
+.card-border {
+  border-radius: 1rem solid 1px;
+}
+
 /* .container {
     border: 1px black solid;
     width: 770px;
