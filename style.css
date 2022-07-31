@@ -20,69 +20,19 @@ a {
   border-radius: 1rem solid 1px;
 }
 
-/* .container {
-    border: 1px black solid;
-    width: 770px;
-} */
-
-/* .box1{
-    border: 1px black solid;
-    height: 30px;
-    width: 200px;
-    grid-template: 15px 50%;
-} */
-
-
-/* .grid {
-    display: grid;
-    border: 2px blue solid;
-    height: 500px;
-    width: 500px;
-    grid-template: 100px 100px 100px 200px / repeat(4, 3fr 2fr);
-    gap: 10px; */
-    
-  /* }
-  
-  .a {
-    grid-row-start:2;
-    grid-row-end:3;
-    grid-column-start:1;
-    grid-column-end:3
-  }
-  
-  .b {
-    grid-row-start:2;
-    grid-row-end:3;
-    grid-column-start:3;
-    grid-column-end:5
-  }
-  
-  .c {
-    grid-row:2/3;
-    grid-column-start:5;
-    grid-column-end:9
-  }
-  .d {
-    grid-row:3/4;
-    grid-column-start:5;
-    grid-column-end:9'
-  }
-  
-  .box {
-    background-color: beige;
-    color: black;
-    border-radius: 5px;
-    border: 2px dodgerblue solid;
-  } */
-
 
   /* bootstrap css*/
+  .navbar {
+    opacity: .6;
+    background-color: black;
+  }
   a {
     font-size:14px;
     font-weight:700
   }
   .superNav {
     font-size:13px;
+    
   }
   .form-control {
     outline:none !important;
@@ -93,3 +43,43 @@ a {
       text-align:center
     }
   }
+
+  /* bg image */
+  #bg-image-container-1{
+    position: relative;
+     top: 0px;
+      left: 0px;
+       width: 100%; 
+       height: 100%;
+        overflow: hidden; 
+        pointer-events: none;
+         visibility: hidden; 
+         z-index: -100;
+  }
+
+  #bg-image{
+     background-position: 50% 50%;
+     background-size: 100%;
+      background-repeat: no-repeat;
+       
+       position: fixed;
+        top: 0px;
+         left: 0px; 
+         width: 1349px;
+          height: 899.333px;
+           overflow: hidden;
+            pointer-events: none;
+             margin-left: 0px;
+              margin-top: -321.667px;
+               visibility: visible;
+                transform: translate3d(0px, 109.89px, 0px);
+  }
+ 
+
+  .user-photo {
+    width: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
