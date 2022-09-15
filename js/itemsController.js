@@ -14,7 +14,12 @@
       }
         this.products.push(product);
         localStorage.setItem("products", JSON.stringify(this.products));
+
+         //saving to json, sendd to backend
+        this.save(name, description, img);
     }
+
+
     loadItemsFromLocalStorage() {
         const storageItems = localStorage.getItem("products")
         if (storageItems) {
@@ -25,6 +30,25 @@
             this.products.push(product);   
         }
     }
+}
+
+save({name, description, imgUrl}){
+    const data = { name,  description, imgUrl };
+
+    fetch('http://localhost:8080/products/save', {
+    method: 'POST', // or 'PUT'
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+    console.log('Success:', data);
+    })
+    .catch((error) => {
+    console.error('Error:', error);
+    });
 }
 }
 
