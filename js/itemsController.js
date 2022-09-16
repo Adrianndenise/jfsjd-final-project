@@ -3,20 +3,22 @@
     this.products = [];
     this.currentId = currentId;
     }
-    addProduct(name,description, img, createdAt){
+    addProduct(name,description, img, createdAt, prodPrice){
       const product = { 
         id: this.currentId++,
         name: name,
        description: description,
        img: img,
-       date: createdAt
+       date: createdAt,
+       prodPrice: prodPrice
        
       }
         this.products.push(product);
         localStorage.setItem("products", JSON.stringify(this.products));
-
+        console.log(name);
          //saving to json, sendd to backend
-        this.save(name, description, img);
+        this.save(name, description, img, prodPrice);
+       
     }
 
 
@@ -32,9 +34,9 @@
     }
 }
 
-save({name, description, imgUrl}){
-    const data = { name,  description, imgUrl };
-
+save(name, description, imgUrl, prodPrice){
+    const data = { name,  description, imgUrl, prodPrice };
+console.log(data);
     fetch('http://localhost:8080/products/save', {
     method: 'POST', // or 'PUT'
     headers: {
@@ -45,6 +47,22 @@ save({name, description, imgUrl}){
     .then(response => response.json())
     .then(data => {
     console.log('Success:', data);
+    })
+    .catch((error) => {
+    console.error('Error:', error);
+    });
+}
+loadProductsPage(){
+    fetch('http://localhost:8080/products/getall', {
+    method: 'GET', 
+    headers: {
+        'Content-Type': 'application/json',
+    }
+    })
+    .then(response => response.json())
+    .then(data => {
+    console.log('Success:', data);
+    localStorage.setItem("products", JSON.stringify(data));
     })
     .catch((error) => {
     console.error('Error:', error);
